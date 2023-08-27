@@ -18,11 +18,8 @@ if st.button('Add Players'):
     st.write('Good Morning') #displayed when the button is clicked
     enter_player = st.text_input('Enter your name: ')
     create_player_list.append(enter_player)
-    print(create_player_list)
+    st.write(create_player_list)
 
-else:
-
-    st.write('you have to press the button') #displayed when the button is unclicked
 
 
 
