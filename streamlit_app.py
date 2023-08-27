@@ -21,4 +21,19 @@ this is your own personal drinking game with meow song geneorator included! Stra
 create_player_list = ["george", "jose", "dani", "josh"]
 st.write(create_player_list)
 
+decision_options = ["drink", "action"]
 action_options = ["hit the deck", "hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "touch a dog", "touch a wall", "stand up"]
+
+
+if st.button('LETS GO GIRLS'):
+  decision = random.choice(decision_options)
+  if decision == "drink":
+    player = random.choice(create_player_list)
+    st.write((player), "drink!")
+
+  elif decision == "action":
+    action = random.choice(action_options)
+    st.write("ACTION:", (action))
+
+  else: 
+    st.write("you did sometihng wrong G")
