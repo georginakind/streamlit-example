@@ -2,7 +2,8 @@ from collections import namedtuple
 import altair as alt
 import math
 import pandas as pd
-from io import BytesIO
+import io
+import requests
 import streamlit as st
 import random
 from time import sleep
@@ -17,11 +18,8 @@ this is your own personal drinking game with meow song geneorator included! Stra
 """
 
 url = "https://raw.githubusercontent.com/georginakind/meow/main/hits_n_wigs.csv"
-df = pd.read_csv(url,index_col=0)
-#df = pd.read_csv(url)
-
-st.write(df.head(5))
-
+s=requests.get(url).content
+c=pd.read_csv(io.StringIO(s.decode('utf-8')))
 
 #st.write(df)
 #st.write("data below")
