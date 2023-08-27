@@ -17,14 +17,8 @@ happy birthday!
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
 
-url = "https://raw.githubusercontent.com/georginakind/streamlit-example/master/hits_n_wigs.csv"
-df = pd.read_csv(url, index_col=0)
-#print(df.head(5))
-
-#st.write(df)
-#st.write("data below")
-#st.write(data)
-
+enter_player_1 = st.text_input('enter player name: ')
+create_player_list.append(enter_player_1)
 
 #st.write('Good Morning') #displayed when the button is clicked
 #enter_player = st.text_input('Enter player name: ')
