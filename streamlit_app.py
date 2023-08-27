@@ -81,7 +81,8 @@ create_player_list.append(enter_player_5)
 st.write(create_player_list)
 
 url = 'https://raw.githubusercontent.com/georginakind/meow/main/hits_n_wigs.csv'
-df = pd.read_csv(url, index_col=0)
+download = requests.get(url).content
+df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 st.write(df.head(5))
 
 decision_options = ["drink", "action"]
