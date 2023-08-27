@@ -233,7 +233,7 @@ if st.button('LETS GO GIRLS'):
     never_question = random.choice(never_list)
     st.write("never_question")
 
-  elif decision == "song game"
+  elif decision == "song game":
     player = random.choice(create_player_list)
     song_selection = random.choice(song_word_list)
     st.write((player),"sing a song with this word in it, first to get it gives out a drink")
