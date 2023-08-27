@@ -20,7 +20,9 @@ this is your own personal drinking game with meow song geneorator included! Stra
 
 st.write("Type 'done' when you've run out of friends")
 
-create_player_list = []
+if st.button('reset friends'):
+    create_player_list = [] 
+
 enter_player = st.text_input("Enter your player name: ")
 create_player_list.append(enter_player)
 st.write(enter_player)
@@ -32,7 +34,6 @@ while enter_player != "done":
 create_player_list.remove("done")
 st.write("your players:", (create_player_list))
 
-print("create_player_list)
       
 st.button('YEHAW LETS PLAY')
 
