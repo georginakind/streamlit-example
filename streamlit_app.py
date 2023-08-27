@@ -19,7 +19,7 @@ this is your own personal drinking game with meow song geneorator included! Stra
 
 url = "https://raw.githubusercontent.com/georginakind/streamlit-example/master/hits_n_wigs.csv"
 df = pd.read_csv(url, index_col=0)
-print(df.head(5))
+#print(df.head(5))
 
 #st.write(df)
 #st.write("data below")
