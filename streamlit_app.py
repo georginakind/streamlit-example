@@ -30,10 +30,9 @@ while enter_player != "done":
     print(enter_player)   
 
 create_player_list.remove("done")
-print(create_player_list)
+st.write("your players:", (create_player_list))
 
 
-create_player_list = []
 st.button('YEHAW LETS PLAY')
 
 
