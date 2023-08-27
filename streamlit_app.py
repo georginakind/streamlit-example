@@ -29,7 +29,8 @@ st.write(enter_player)
 while enter_player != "done":
     enter_player = st.text_input("Enter your player name: ")
     create_player_list.append(enter_player)
-    print(enter_player)   
+    print(enter_player) 
+    print(create_player_list)
 
 create_player_list.remove("done")
 st.write("your players:", (create_player_list))
@@ -37,26 +38,26 @@ print(create_player_list)
     
 if st.button('YEHAW LETS PLAY'):
 
-decision_options = ["drink", "action"]
-decision = random.choice(decision_options)
-#if decision == "never have i ever":
-#    never_question = random.choice(never_list)
-#    print(never_question)   
+    decision_options = ["drink", "action"]
+    decision = random.choice(decision_options)
+    #if decision == "never have i ever":
+    #    never_question = random.choice(never_list)
+    #    print(never_question)   
     
-if decision == "action":
-    action = random.choice(action_options)
-    print("ACTION:", (action))
+    if decision == "action":
+        action = random.choice(action_options)
+        print("ACTION:", (action))
 
-#elif decision == "meow":
-#    meow_song_selection = random.choice(meow_list)
-#    player = random.choice(create_player_list)
-#    print((player)," meow this song\n",
-#      "EVERYONE LOOK AWAY\n",)
-#    sleep(5)
-#    print(meow_song_selection)
+    #elif decision == "meow":
+    #    meow_song_selection = random.choice(meow_list)
+    #    player = random.choice(create_player_list)
+    #    print((player)," meow this song\n",
+    #      "EVERYONE LOOK AWAY\n",)
+    #    sleep(5)
+    #    print(meow_song_selection)
 
-elif decision == "drink":
-    player = random.choice(create_player_list)
-    print((player), "drink!")
+    elif decision == "drink":
+        player = random.choice(create_player_list)
+        print((player), "drink!")
 
 else: print(decision)
