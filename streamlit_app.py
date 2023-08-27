@@ -17,8 +17,9 @@ happy birthday!
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
 
-data = pd.read_csv("https://raw.githubusercontent.com/georginakind/meow/main/hits_n_wigs.csv") #path folder of the data file
-st.write(data) #displays the table of data
+url = 'https://raw.githubusercontent.com/georginakind/meow/main/hits_n_wigs.csv'
+df = pd.read_csv(url, index_col=0)
+#st.write(df.head(5))
 
 #st.write(df)
 #st.write("data below")
