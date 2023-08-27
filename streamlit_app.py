@@ -16,7 +16,7 @@ happy birthday!
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
 
-url = "https://github.com/georginakind/meow/raw/main/hits_n_wigs.xlsx"
+url = "https://github.com/georginakind/meow/blob/main/hits_n_wigs.xlsx"
 data = rq.get(url).content
 df = pd.read_excel(BytesIO(data))
 
