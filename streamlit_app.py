@@ -18,8 +18,7 @@ this is your own personal drinking game with meow song geneorator included! Stra
 """
 
 url = "https://raw.githubusercontent.com/georginakind/meow/main/hits_n_wigs.csv"
-s=requests.get(url).content
-c=pd.read_csv(io.StringIO(s.decode('utf-8')))
+c=pd.read_csv(url)
 
 #st.write(df)
 #st.write("data below")
