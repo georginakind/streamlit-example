@@ -2,6 +2,7 @@ from collections import namedtuple
 import altair as alt
 import math
 import pandas as pd
+from io import BytesIO
 import streamlit as st
 import random
 from time import sleep
