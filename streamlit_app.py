@@ -160,20 +160,22 @@ else: st.write(enter_player_2)
 create_player_list.append(enter_player_2)
 
 
-st.button('add a player'):
+if st.button('add a player'):
     enter_player_3 = st.text_input("enter player 3 name:")
     if enter_player_3 in accepted_pretty_names:
         st.write("omg she's so pretty")
     elif enter_player_3 in pete_names:
         st.write("WOOF who let the dogs out!!") 
     elif enter_player_3 in dani_names:
-         st.write("pickles, nice to see you using the beautiful game")
+        st.write("pickles, nice to see you using the beautiful game")
     elif enter_player_3 in jose_names:
         st.write("maddest of dogs, hello.")
     elif enter_player_3 in smith_names:
         st.write("STINKY")
     else: st.write(enter_player_3)
     create_player_list.append(enter_player_3)
+    
+
 
 enter_player_4 = st.text_input("enter player 4 name:")
 if enter_player_4 in accepted_pretty_names:
