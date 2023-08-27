@@ -5,6 +5,8 @@ import pandas as pd
 import streamlit as st
 import random
 from time import sleep
+import requests as rq
+
 """
 # meow 
 
@@ -12,6 +14,16 @@ happy birthday!
 
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
+data = d3.csv("https://github.com/georginakind/meow/blob/main/hits_n_wigs.xlsx")
+
+url = "https://github.com/georginakind/meow/blob/main/hits_n_wigs.xlsx"
+meow_list = rq.get(url).content
+df = pd.read_excel(BytesIO(data))
+
+st.write(df)
+st.write("meow list below")
+st.write(meow_list)
+
 
 #st.write('Good Morning') #displayed when the button is clicked
 #enter_player = st.text_input('Enter player name: ')
