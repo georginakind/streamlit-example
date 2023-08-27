@@ -30,6 +30,8 @@ create_player_list = []
 accepted_pretty_names = {'gk', 'george', 'G', "George", "g"}
 pete_names = {"pete", "Pete"}
 dani_names = {"Dani", "dani", "Dannielle", "dannielle", "DTK", "dtk"}
+jose_names = {"Jose", "jose", "mad dog jose dog"}
+smith_names = {"smith", "smithy", "Smithy", "Smith", "Daniel"}
 
 enter_player_1 = st.text_input("enter player 1 name:")
 if enter_player_1 in accepted_pretty_names:
@@ -38,6 +40,10 @@ elif enter_player_1 in pete_names:
     st.write("WOOF who let the dogs out!!") 
 elif enter_player_1 in dani_names:
     st.write("pickles, nice to see you using the beautiful game")
+elif enter_player_1 in jose_names:
+    st.write("maddest of dogs, hello.")
+elif enter_player_1 in smith_names:
+    st.write("STINKY")
 else: st.write(enter_player_1)
 create_player_list.append(enter_player_1)
 
@@ -48,6 +54,10 @@ elif enter_player_2 in pete_names:
     st.write("WOOF who let the dogs out!!") 
 elif enter_player_2 in dani_names:
     st.write("pickles, nice to see you using the beautiful game")
+elif enter_player_2 in jose_names:
+    st.write("maddest of dogs, hello.")
+elif enter_player_2 in smith_names:
+    st.write("STINKY")
 else: st.write(enter_player_2)
 create_player_list.append(enter_player_2)
 
@@ -58,6 +68,10 @@ elif enter_player_3 in pete_names:
     st.write("WOOF who let the dogs out!!") 
 elif enter_player_3 in dani_names:
     st.write("pickles, nice to see you using the beautiful game")
+elif enter_player_3 in jose_names:
+    st.write("maddest of dogs, hello.")
+elif enter_player_3 in smith_names:
+    st.write("STINKY")
 else: st.write(enter_player_3)
 create_player_list.append(enter_player_3)
 
@@ -68,6 +82,10 @@ elif enter_player_4 in pete_names:
     st.write("WOOF who let the dogs out!!") 
 elif enter_player_4 in dani_names:
     st.write("pickles, nice to see you using the beautiful game")
+elif enter_player_4 in jose_names:
+    st.write("maddest of dogs, hello.")
+elif enter_player_4 in smith_names:
+    st.write("STINKY")
 else: st.write(enter_player_4)
 create_player_list.append(enter_player_4)
 
@@ -78,6 +96,10 @@ elif enter_player_5 in pete_names:
     st.write("WOOF who let the dogs out!!") 
 elif enter_player_5 in dani_names:
     st.write("pickles, nice to see you using the beautiful game")
+elif enter_player_5 in jose_names:
+    st.write("maddest of dogs, hello.")
+elif enter_player_5 in smith_names:
+    st.write("STINKY")
 else: st.write(enter_player_5)
 create_player_list.append(enter_player_5)
 
