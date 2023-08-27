@@ -32,7 +32,7 @@ if enter_player_1 in accepted_pretty_names:
     st.write("omg she's so pretty")
 elif enter_player_1 in pete_names:
     st.write("WOOF who let the dogs out!!") 
-else: st.write(enter_player)
+else: st.write(enter_player_1)
 create_player_list.append(enter_player_1)
 
 enter_player_2 = st.text_input("enter player 2 name:")
