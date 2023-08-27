@@ -12,11 +12,14 @@ happy birthday!
 
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
-
+create_player_list = []
 if st.button('Add Players'):
 
     st.write('Good Morning') #displayed when the button is clicked
-    name = st.text_input('Enter your name: ', 'John Doe')
+    enter_player = st.text_input('Enter your name: ')
+    create_player_list.append(enter_player)
+    print(create_player_list)
+
 else:
 
     st.write('you have to press the button') #displayed when the button is unclicked
