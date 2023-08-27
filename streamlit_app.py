@@ -26,29 +26,56 @@ this is your own personal drinking game with meow song geneorator included! Stra
 create_player_list = []
 accepted_pretty_names = {'gk', 'george', 'G', "George"}
 pete_names = {"pete", "Pete"}
+dani_names = {"Dani", "dani", "Dannielle", "dannielle", "DTK", "dtk"}
 
 enter_player_1 = st.text_input("enter player 1 name:")
 if enter_player_1 in accepted_pretty_names:
     st.write("omg she's so pretty")
 elif enter_player_1 in pete_names:
     st.write("WOOF who let the dogs out!!") 
+elif enter_player_1 in dani_names:
+    st.write("pickles, nice to see you using the beautiful game")
 else: st.write(enter_player_1)
 create_player_list.append(enter_player_1)
 
 enter_player_2 = st.text_input("enter player 2 name:")
-st.write(enter_player_2)
+if enter_player_2 in accepted_pretty_names:
+    st.write("omg she's so pretty")
+elif enter_player_2 in pete_names:
+    st.write("WOOF who let the dogs out!!") 
+elif enter_player_2 in dani_names:
+    st.write("pickles, nice to see you using the beautiful game")
+else: st.write(enter_player_2)
 create_player_list.append(enter_player_2)
 
 enter_player_3 = st.text_input("enter player 3 name:")
-st.write(enter_player_3)
+if enter_player_3 in accepted_pretty_names:
+    st.write("omg she's so pretty")
+elif enter_player_3 in pete_names:
+    st.write("WOOF who let the dogs out!!") 
+elif enter_player_3 in dani_names:
+    st.write("pickles, nice to see you using the beautiful game")
+else: st.write(enter_player_3)
 create_player_list.append(enter_player_3)
 
 enter_player_4 = st.text_input("enter player 4 name:")
-st.write(enter_player_4)
+if enter_player_4 in accepted_pretty_names:
+    st.write("omg she's so pretty")
+elif enter_player_4 in pete_names:
+    st.write("WOOF who let the dogs out!!") 
+elif enter_player_4 in dani_names:
+    st.write("pickles, nice to see you using the beautiful game")
+else: st.write(enter_player_4)
 create_player_list.append(enter_player_4)
 
 enter_player_5 = st.text_input("enter player 5 name:")
-st.write(enter_player_5)
+if enter_player_5 in accepted_pretty_names:
+    st.write("omg she's so pretty")
+elif enter_player_5 in pete_names:
+    st.write("WOOF who let the dogs out!!") 
+elif enter_player_5 in dani_names:
+    st.write("pickles, nice to see you using the beautiful game")
+else: st.write(enter_player_5)
 create_player_list.append(enter_player_5)
 
 st.write(create_player_list)
