@@ -24,9 +24,15 @@ this is your own personal drinking game with meow song geneorator included! Stra
 #st.write(create_player_list)
 
 create_player_list = []
+accepted_pretty_names = {'gk', 'george', 'G', "George"}
+pete_names = {"pete", "Pete"}
 
 enter_player_1 = st.text_input("enter player 1 name:")
-st.write(enter_player_1)
+if enter_player_1 in accepted_pretty_names:
+    st.write("omg she's so pretty")
+elif enter_player_1 in pete_names:
+    st.write("WOOF who let the dogs out!!") 
+else: st.write(enter_player)
 create_player_list.append(enter_player_1)
 
 enter_player_2 = st.text_input("enter player 2 name:")
