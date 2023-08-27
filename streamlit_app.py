@@ -26,9 +26,21 @@ this is your own personal drinking game with meow song geneorator included! Stra
 create_player_list = ["george", "jose", "dani", "josh"]
 st.write(create_player_list)
 
-enter_player = st.text_input("enter player name:")
-st.write(enter_player)
-create_player_list.append(enter_player)
+enter_player_1 = st.text_input("enter player 1 name:")
+st.write(enter_player_1)
+create_player_list.append(enter_player_1)
+
+enter_player_2 = st.text_input("enter player 2 name:")
+st.write(enter_player_2)
+create_player_list.append(enter_player_2)
+
+enter_player_3 = st.text_input("enter player 3 name:")
+st.write(enter_player_3)
+create_player_list.append(enter_player_3)
+
+enter_player_4 = st.text_input("enter player 4 name:")
+st.write(enter_player_4)
+create_player_list.append(enter_player_4)
 
 st.write(create_player_list)
 
