@@ -17,6 +17,8 @@ happy birthday!
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
 
+url = "https://raw.githubusercontent.com/georginakind/streamlit-example/master/hits_n_wigs.csv"
+c=pd.read_csv(url)
 
 #st.write(df)
 #st.write("data below")
