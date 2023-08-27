@@ -21,22 +21,23 @@ this is your own personal drinking game with meow song geneorator included! Stra
 st.write("Type 'done' when you've run out of friends")
 
 action_options = ["hit the deck", "hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "touch a dog", "touch a wall", "stand up"]
-create_player_list = [] 
-enter_player = st.text_input("Enter your player name: ")
-create_player_list.append(enter_player)
-st.write(enter_player)
-st.write(create_player_list)
+#create_player_list = [] 
+#enter_player = st.text_input("Enter your player name: ")
+#create_player_list.append(enter_player)
+#st.write(enter_player)
+#st.write(create_player_list)
 
-while enter_player != "done":
-    enter_player = st.text_input("Enter your player name: ")
-    create_player_list.append(enter_player)
-    print(enter_player) 
-    print(create_player_list)
+#while enter_player != "done":
+#    enter_player = st.text_input("Enter your player name: ")
+#    create_player_list.append(enter_player)
+#    print(enter_player) 
+#    print(create_player_list)
 
-create_player_list.remove("done")
-st.write("your players:", (create_player_list))
-print(create_player_list)
-    
+#create_player_list.remove("done")
+#st.write("your players:", (create_player_list))
+#print(create_player_list)
+
+create_player_list = [george, jose, tahls] 
 if st.button('YEHAW LETS PLAY'):
 
     decision_options = ["drink", "action"]
@@ -47,7 +48,7 @@ if st.button('YEHAW LETS PLAY'):
     
     if decision == "action":
         action = random.choice(action_options)
-        print("ACTION:", (action))
+        st.write("ACTION:", (action))
 
     #elif decision == "meow":
     #    meow_song_selection = random.choice(meow_list)
