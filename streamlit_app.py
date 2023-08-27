@@ -25,6 +25,7 @@ create_player_list = []
 enter_player = st.text_input("Enter your player name: ")
 create_player_list.append(enter_player)
 st.write(enter_player)
+st.write(create_player_list)
 
 while enter_player != "done":
     enter_player = st.text_input("Enter your player name: ")
@@ -60,4 +61,4 @@ if st.button('YEHAW LETS PLAY'):
         player = random.choice(create_player_list)
         print((player), "drink!")
 
-else: print(decision)
+    else: print(decision)
