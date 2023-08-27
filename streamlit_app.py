@@ -12,16 +12,29 @@ happy birthday!
 
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
+
+#st.write('Good Morning') #displayed when the button is clicked
+#enter_player = st.text_input('Enter player name: ')
+#create_player_list.append(enter_player)
+#st.write(create_player_list)
+
+st.write("Type 'done' when you've run out of friends")
+
 create_player_list = []
-st.button('Add Players')
-
-st.write('Good Morning') #displayed when the button is clicked
-enter_player = st.text_input('Enter player name: ')
+enter_player = st.text_input("Enter your player name: ")
 create_player_list.append(enter_player)
-st.write(create_player_list)
+st.write(enter_player)
+while enter_player != "done":
+    enter_player = st.text_input("Enter your player name: ")
+    create_player_list.append(enter_player)
+    print(enter_player)   
+
+create_player_list.remove("done")
+print(create_player_list)
 
 
-
+create_player_list = []
+st.button('YEHAW LETS PLAY')
 
 
 
