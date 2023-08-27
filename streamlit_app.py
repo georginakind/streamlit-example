@@ -89,7 +89,7 @@ st.write(create_player_list)
 #st.write(df.head(5))
 
 decision_options = ["drink", "action", "meow", "meow", "meow"]
-action_options = ["hit the deck", "hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "touch a dog", "touch a wall", "stand up"]
+action_options = ["last person to hit the deck drinks", "last person with their hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "last person to touch a dog drinks", "last person to touch a wall drinks", "last person to stand up drinks"]
 
 
 if st.button('LETS GO GIRLS'):
@@ -102,12 +102,12 @@ if st.button('LETS GO GIRLS'):
       meow_song_selection = random.choice(meow_list)
       player = random.choice(create_player_list)
       st.write((player), "Meeeow this song:\n", "EVERYONE LOOK AWAY")
-      sleep(5)
+      sleep(4)
       st.write(meow_song_selection)
       
   elif decision == "action":
     action = random.choice(action_options)
-    st.write("ACTION:", (action))
+    st.write(action)
 
   else: 
-    st.write("you did sometihng wrong G")
+    st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
