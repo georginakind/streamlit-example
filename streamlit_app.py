@@ -7,13 +7,11 @@ import streamlit as st
 """
 # meow 
 
-meow ? 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
+happy birthday little baby pickles! ❤
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
+this is your own personal drinking game with meow song geneorator included! Straight out of hits n wigs
 
-In the meantime, below is an example of what you can do with just a few lines of code:
+
 """
 
 
