@@ -27,7 +27,7 @@ meow_list = ['Nu Flow by Big Brovaz', 'Angel by Shaggy, Rayvon', 'How Will I Kno
 
 
 create_player_list = []
-accepted_pretty_names = {'gk', 'george', 'G', "George"}
+accepted_pretty_names = {'gk', 'george', 'G', "George", "g"}
 pete_names = {"pete", "Pete"}
 dani_names = {"Dani", "dani", "Dannielle", "dannielle", "DTK", "dtk"}
 
@@ -103,7 +103,7 @@ if st.button('LETS GO GIRLS'):
       player = random.choice(create_player_list)
       st.write((player), "Meeeow this song:\n", "EVERYONE LOOK AWAY")
       sleep(5)
-      print(meow_song_selection)
+      st.write(meow_song_selection)
       
   elif decision == "action":
     action = random.choice(action_options)
