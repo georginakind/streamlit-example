@@ -15,14 +15,16 @@ happy birthday!
 
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
-
-url = "https://github.com/georginakind/meow/blob/main/hits_n_wigs.xlsx"
-data = rq.get(url).content
-df = pd.read_excel(BytesIO(data))
-
-st.write(df)
-st.write("data below")
+data = d3.csv("https://raw.githubusercontent.com/georginakind/meow/main/hits_n_wigs.csv")
 st.write(data)
+
+#url = "https://github.com/georginakind/meow/blob/main/hits_n_wigs.xlsx"
+#data = rq.get(url).content
+#df = pd.read_excel(BytesIO(data))
+
+#st.write(df)
+#st.write("data below")
+#st.write(data)
 
 
 #st.write('Good Morning') #displayed when the button is clicked
