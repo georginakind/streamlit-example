@@ -20,7 +20,7 @@ this is your own personal drinking game with meow song geneorator included! Stra
 
 st.write("Type 'done' when you've run out of friends")
 
-
+action_options = ["hit the deck", "hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "touch a dog", "touch a wall", "stand up"]
 create_player_list = [] 
 enter_player = st.text_input("Enter your player name: ")
 create_player_list.append(enter_player)
@@ -33,31 +33,30 @@ while enter_player != "done":
 
 create_player_list.remove("done")
 st.write("your players:", (create_player_list))
+print(create_player_list)
+    
+if st.button('YEHAW LETS PLAY'):
 
-st.write(create_player_list)
-      
-st.button('YEHAW LETS PLAY')
+decision_options = ["drink", "action"]
+decision = random.choice(decision_options)
+#if decision == "never have i ever":
+#    never_question = random.choice(never_list)
+#    print(never_question)   
+    
+if decision == "action":
+    action = random.choice(action_options)
+    print("ACTION:", (action))
 
+#elif decision == "meow":
+#    meow_song_selection = random.choice(meow_list)
+#    player = random.choice(create_player_list)
+#    print((player)," meow this song\n",
+#      "EVERYONE LOOK AWAY\n",)
+#    sleep(5)
+#    print(meow_song_selection)
 
+elif decision == "drink":
+    player = random.choice(create_player_list)
+    print((player), "drink!")
 
-
-with st.echo(code_location='below'):
-    total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
-    num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
-
-    Point = namedtuple('Point', 'x y')
-    data = []
-
-    points_per_turn = total_points / num_turns
-
-    for curr_point_num in range(total_points):
-        curr_turn, i = divmod(curr_point_num, points_per_turn)
-        angle = (curr_turn + 1) * 2 * math.pi * i / points_per_turn
-        radius = curr_point_num / total_points
-        x = radius * math.cos(angle)
-        y = radius * math.sin(angle)
-        data.append(Point(x, y))
-
-    st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
-        .mark_circle(color='#0068c9', opacity=0.5)
-        .encode(x='x:Q', y='y:Q'))
+else: print(decision)
