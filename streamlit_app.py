@@ -14,7 +14,6 @@ happy birthday!
 
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
-data = d3.csv("https://github.com/georginakind/meow/blob/main/hits_n_wigs.xlsx")
 
 url = "https://github.com/georginakind/meow/blob/main/hits_n_wigs.xlsx"
 meow_list = rq.get(url).content
