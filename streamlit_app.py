@@ -24,17 +24,17 @@ if st.button('reset friends'):
     create_player_list = [] 
 
 else:
-enter_player = st.text_input("Enter your player name: ")
-create_player_list.append(enter_player)
-st.write(enter_player)
-
-while enter_player != "done":
     enter_player = st.text_input("Enter your player name: ")
     create_player_list.append(enter_player)
-    print(enter_player)   
+    st.write(enter_player)
 
-create_player_list.remove("done")
-st.write("your players:", (create_player_list))
+    while enter_player != "done":
+        enter_player = st.text_input("Enter your player name: ")
+        create_player_list.append(enter_player)
+        print(enter_player)   
+
+    create_player_list.remove("done")
+    st.write("your players:", (create_player_list))
 
       
 st.button('YEHAW LETS PLAY')
