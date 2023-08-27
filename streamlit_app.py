@@ -231,7 +231,7 @@ if st.button('LETS GO GIRLS'):
 
   elif decision == "never":
     never_question = random.choice(never_list)
-    st.write("never_question)
+    st.write("never_question")
 
   elif decision == "song game"
     player = random.choice(create_player_list)
