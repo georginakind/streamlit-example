@@ -23,9 +23,11 @@ st.write("Type 'done' when you've run out of friends")
 if st.button('reset friends'):
     create_player_list = [] 
 
+else:
 enter_player = st.text_input("Enter your player name: ")
 create_player_list.append(enter_player)
 st.write(enter_player)
+
 while enter_player != "done":
     enter_player = st.text_input("Enter your player name: ")
     create_player_list.append(enter_player)
