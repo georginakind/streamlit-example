@@ -89,7 +89,7 @@ st.write(create_player_list)
 #st.write(df.head(5))
 
 decision_options = ["drink", "action", "meow", "meow", "meow", "never"]
-action_options = ["last person to hit the deck drinks", "last person with their hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "last person to touch a dog drinks", "last person to touch a wall drinks", "last person to stand up drinks"]
+action_options = ["last person to hit the deck drinks", "last person with their hands up drinks", "girls drink", "boys drink", "they drink (we all about equality in this game)", "least drunk drink", "last person to touch a dog drinks", "last person to touch a wall drinks", "last person to stand up drinks"]
 
 
 if st.button('LETS GO GIRLS'):
@@ -108,6 +108,10 @@ if st.button('LETS GO GIRLS'):
   elif decision == "action":
     action = random.choice(action_options)
     st.write(action)
+
+  elif decision == "never":
+    never_question = random.choice(never_list)
+    st.write(never_question)
 
   else: 
     st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
