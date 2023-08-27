@@ -28,6 +28,9 @@ st.write(create_player_list)
 
 enter_player = st.text_input("enter player name:")
 st.write(enter_player)
+create_player_list.append(enter_player)
+
+st.write(create_player_list)
 
 decision_options = ["drink", "action"]
 action_options = ["hit the deck", "hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "touch a dog", "touch a wall", "stand up"]
