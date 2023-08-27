@@ -16,12 +16,12 @@ this is your own personal drinking game with meow song geneorator included! Stra
 """
 
 url = "https://github.com/georginakind/meow/blob/main/hits_n_wigs.xlsx"
-meow_list = rq.get(url).content
+data = rq.get(url).content
 df = pd.read_excel(BytesIO(data))
 
 st.write(df)
-st.write("meow list below")
-st.write(meow_list)
+st.write("data below")
+st.write(data)
 
 
 #st.write('Good Morning') #displayed when the button is clicked
