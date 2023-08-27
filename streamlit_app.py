@@ -17,8 +17,6 @@ happy birthday!
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
 
-enter_player_1 = st.text_input('enter player name: ')
-create_player_list.append(enter_player_1)
 
 #st.write('Good Morning') #displayed when the button is clicked
 #enter_player = st.text_input('Enter player name: ')
@@ -27,6 +25,9 @@ create_player_list.append(enter_player_1)
 
 create_player_list = ["george", "jose", "dani", "josh"]
 st.write(create_player_list)
+
+enter_player = st.text_input("enter player name:")
+st.write(enter_player)
 
 decision_options = ["drink", "action"]
 action_options = ["hit the deck", "hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "touch a dog", "touch a wall", "stand up"]
