@@ -83,10 +83,10 @@ create_player_list.append(enter_player_5)
 
 st.write(create_player_list)
 
-url = 'https://raw.githubusercontent.com/georginakind/meow/main/hits_n_wigs.csv'
-download = requests.get(url).content
-df = pd.read_csv(io.StringIO(download.decode('utf-8')))
-st.write(df.head(5))
+#url = 'https://raw.githubusercontent.com/georginakind/meow/main/hits_n_wigs.csv'
+#download = requests.get(url).content
+#df = pd.read_csv(io.StringIO(download.decode('utf-8')))
+#st.write(df.head(5))
 
 decision_options = ["drink", "action", "meow", "meow"]
 action_options = ["hit the deck", "hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "touch a dog", "touch a wall", "stand up"]
