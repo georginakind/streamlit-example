@@ -13,13 +13,13 @@ happy birthday!
 this is your own personal drinking game with meow song geneorator included! Straight out of HITS N WIGS 
 """
 
-if st.button('Wish Good morning'):
+if st.button('Add Players'):
 
     st.write('Good Morning') #displayed when the button is clicked
-
+    name = st.text_input('Enter your name: ', 'John Doe')
 else:
 
-    st.write('Have a great day') #displayed when the button is unclicked
+    st.write('you have to press the button') #displayed when the button is unclicked
 
 
 
