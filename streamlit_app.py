@@ -160,8 +160,7 @@ else: st.write(enter_player_2)
 create_player_list.append(enter_player_2)
 
 
-if st.button('add a player'):
-
+st.button('add a player'):
     enter_player_3 = st.text_input("enter player 3 name:")
     if enter_player_3 in accepted_pretty_names:
         st.write("omg she's so pretty")
