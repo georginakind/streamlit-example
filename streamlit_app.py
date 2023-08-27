@@ -32,7 +32,8 @@ while enter_player != "done":
 create_player_list.remove("done")
 st.write("your players:", (create_player_list))
 
-
+print("create_player_list)
+      
 st.button('YEHAW LETS PLAY')
 
 
