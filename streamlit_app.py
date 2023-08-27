@@ -88,7 +88,7 @@ st.write(create_player_list)
 #df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 #st.write(df.head(5))
 
-decision_options = ["drink", "action", "meow", "meow"]
+decision_options = ["drink", "action", "meow", "meow", "meow"]
 action_options = ["hit the deck", "hands up", "girls drink", "boys drink", "they drink", "least drunk drink", "touch a dog", "touch a wall", "stand up"]
 
 
