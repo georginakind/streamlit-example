@@ -251,14 +251,11 @@ if st.button('LETS GO GIRLS'):
       sleep(5)
       st.write(m_answer)      
 
-    elif trivia_choice == "Taylor Swift":
+    else trivia_choice == "Taylor Swift":
         t_question, t_answer = random.choice(list(taylor_dict.items()))
         st.write(t_question)
         sleep(5)
         st.write(t_answer)
-
-    else: 
-        st.write(trivia_choice)
     
   elif decision == "action":
     action = random.choice(action_options)
