@@ -241,10 +241,14 @@ if st.button('LETS GO GIRLS'):
       st.header(meow_song_selection)
       
   elif decision == "trivia":
-    trivia_options = ["movies", "taylor", "sports", "general"]
+    trivia_options = ["Movies", "Taylor Swift", "Sports", "General Knowledge"]
     trivia_choice = random.choice(trivia_options)
-    st.write(trivia_choice)
-    st.write("place your bets! Number of drinks you can give out or number you drink if you lose")
+    st.header("Trivia! Your category is:")
+    st.subheader(trivia_choice)
+    st.write(""Place your bets! Number of drinks you can give out or number you drinks if you lose")
+    sleep(5)
+    st.write("You have 5 more seconds")
+    st.write("continue code u weapon")
     
   elif decision == "action":
     action = random.choice(action_options)
