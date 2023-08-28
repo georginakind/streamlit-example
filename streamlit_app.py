@@ -217,7 +217,7 @@ st.write(create_player_list)
 #df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 #st.write(df.head(5))
 
-decision_options = ["drink", "action", "meow", "meow", "trivia", "never", "song game"]
+decision_options = ["action", "trivia"]
 action_options = ["last person to hit the deck drinks", "last person with their hands up drinks", "girls drink", "boys drink", "they drink (we all about equality in this game)", "least drunk drink", "last person to touch a dog drinks", "last person to touch a wall drinks", "last person to stand up drinks"]
 
 
@@ -245,20 +245,20 @@ if st.button('LETS GO GIRLS'):
     sleep(5)
     st.write("You have 5 more seconds")
     sleep(5)
-      if trivia_options == "Movies":
-          m_question, m_answer = random.choice(list(movies_dict.items()))
-          st.write(m_question)
-          sleep(5)
-          st.write(m_answer)      
+        if trivia_options == "Movies":
+            m_question, m_answer = random.choice(list(movies_dict.items()))
+            st.write(m_question)
+            sleep(5)
+            st.write(m_answer)      
 
-      elif trivia_options == "Taylor":
-          t_question, t_answer = random.choice(list(taylor_dict.items()))
-          st.write(t_question)
-          sleep(5)
-          st.write(t_answer)
+        elif trivia_options == "Taylor":
+            t_question, t_answer = random.choice(list(taylor_dict.items()))
+            st.write(t_question)
+            sleep(5)
+            st.write(t_answer)
 
-      else:
-          st.write(trivia_choice)
+        else:
+            st.write(trivia_choice)
     
   elif decision == "action":
     action = random.choice(action_options)
