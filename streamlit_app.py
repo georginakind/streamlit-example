@@ -225,7 +225,8 @@ if st.button('LETS GO GIRLS'):
   elif decision == "meow":
       meow_song_selection = random.choice(meow_list)
       player = random.choice(create_player_list)
-      st.subheader("Meeeow this song,", (player))
+      st.subheader(player)
+      st.subheader("Meeeow this song")
       sleep(4)
       st.header(meow_song_selection)
       
