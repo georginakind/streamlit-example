@@ -220,7 +220,8 @@ if st.button('LETS GO GIRLS'):
   decision = random.choice(decision_options)
   if decision == "drink":
     player = random.choice(create_player_list)
-    st.header((player), "drink!")
+    st.subheader(player)
+    st.header("drink!")
  
   elif decision == "meow":
       meow_song_selection = random.choice(meow_list)
