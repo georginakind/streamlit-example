@@ -257,8 +257,7 @@ if st.button('LETS GO GIRLS'):
         sleep(5)
         st.write(t_answer)
 
-     else:
-       st.write(trivia_choice)
+    else: st.write(trivia_choice)
     
   elif decision == "action":
     action = random.choice(action_options)
