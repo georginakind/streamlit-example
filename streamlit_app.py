@@ -245,7 +245,7 @@ if st.button('LETS GO GIRLS'):
     trivia_choice = random.choice(trivia_options)
     st.header("Trivia! Your category is:")
     st.subheader(trivia_choice)
-    st.write(""Place your bets! Number of drinks you can give out or number you drinks if you lose")
+    st.write("Place your bets! Number of drinks you can give out or number you drinks if you lose")
     sleep(5)
     st.write("You have 5 more seconds")
     st.write("continue code u weapon")
