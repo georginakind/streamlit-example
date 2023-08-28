@@ -245,13 +245,13 @@ if st.button('LETS GO GIRLS'):
     sleep(5)
     st.write("You have 5 more seconds")
     sleep(5)
-    if trivia_options == "Movies":
+    if trivia_choice == "Movies":
         m_question, m_answer = random.choice(list(movies_dict.items()))
         st.write(m_question)
         sleep(5)
         st.write(m_answer)      
 
-    elif trivia_options == "Taylor Swift":
+    elif trivia_choice == "Taylor Swift":
         t_question, t_answer = random.choice(list(taylor_dict.items()))
         st.write(t_question)
         sleep(5)
