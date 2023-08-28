@@ -237,7 +237,7 @@ if st.button('LETS GO GIRLS'):
       st.header(meow_song_selection)
       
   elif decision == "trivia":
-    trivia_options = ["Movies", "Taylor Swift", "Sports", "General Knowledge"]
+    trivia_options = ["Movies", "Taylor Swift"]
     trivia_choice = random.choice(trivia_options)
     st.subheader("Trivia! Your category is:")
     st.header(trivia_choice)
@@ -251,7 +251,7 @@ if st.button('LETS GO GIRLS'):
         sleep(5)
         st.write(m_answer)      
 
-    elif trivia_options == "Taylor":
+    elif trivia_options == "Taylor Swift":
         t_question, t_answer = random.choice(list(taylor_dict.items()))
         st.write(t_question)
         sleep(5)
