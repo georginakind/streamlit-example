@@ -220,29 +220,30 @@ if st.button('LETS GO GIRLS'):
   decision = random.choice(decision_options)
   if decision == "drink":
     player = random.choice(create_player_list)
-    st.write((player), "drink!")
+    st.header((player), "drink!")
  
   elif decision == "meow":
       meow_song_selection = random.choice(meow_list)
       player = random.choice(create_player_list)
-      st.write((player), "Meeeow this song:\n", "EVERYONE LOOK AWAY")
+      st.subheader((player), "Meeeow this song:\n", "EVERYONE LOOK AWAY")
       sleep(4)
-      st.write(meow_song_selection)
+      st.header(meow_song_selection)
       
   elif decision == "action":
     action = random.choice(action_options)
-    st.write(action)
+    st.header(action)
 
   elif decision == "never":
     never_question = random.choice(never_list)
-    st.write("if sometime you have ever, you drink\n", (never_question))
+    st.subheader("if sometimes you have ever, you drink")
+    st.header(never_question)
 
   elif decision == "song game":
     player = random.choice(create_player_list)
     song_selection = random.choice(song_word_list)
-    st.write("sing a song with this word in it, first to get it gives out a drink")
+    st.subheader("sing a song with this word in it, first to get it gives out a drink")
     sleep(2)
-    st.write(song_selection)
+    st.header(song_selection)
     
   else: 
     st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
