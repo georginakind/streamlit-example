@@ -196,6 +196,9 @@ elif enter_player_4 in smith_names:
 else: st.write(enter_player_4)
 create_player_list.append(enter_player_4)
 
+if len(enter_player_4) != 0:
+    create_player_list.append(enter_player_4)
+
 enter_player_5 = st.text_input("enter player 5 name:")
 if enter_player_5 in accepted_pretty_names:
     st.write("omg she's so pretty")
@@ -210,6 +213,9 @@ elif enter_player_5 in smith_names:
 else: st.write(enter_player_5)
 create_player_list.append(enter_player_5)
 
+if len(enter_player_5) != 0:
+    create_player_list.append(enter_player_5)
+
 #st.write("testing new player list process because the current one is ugly"        
 #container1 = st.beta_container()
 #sym = container1.text_input('Add players')
@@ -220,7 +226,7 @@ create_player_list.append(enter_player_5)
 #    ss.wt.append(sym)
 
 #st.write(ss.wt)
-
+st.subheader("Player Names:")
 st.write(create_player_list)
 
 #url = 'https://raw.githubusercontent.com/georginakind/meow/main/hits_n_wigs.csv'
