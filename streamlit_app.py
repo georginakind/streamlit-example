@@ -7,6 +7,9 @@ import requests
 import streamlit as st
 import random
 from time import sleep
+
+st.balloons()
+
 """
 # meow 
 
