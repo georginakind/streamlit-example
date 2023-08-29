@@ -144,6 +144,7 @@ if enter_player_1 in accepted_pretty_names:
 elif enter_player_1 in pete_names:
     st.write("WOOF who let the dogs out!!") 
 elif enter_player_1 in dani_names:
+    st.balloons()
     st.write("pickles, nice to see you using the beautiful game")
 elif enter_player_1 in jose_names:
     st.write("maddest of dogs, hello.")
@@ -159,6 +160,7 @@ elif enter_player_2 in pete_names:
     st.write("WOOF who let the dogs out!!") 
 elif enter_player_2 in dani_names:
     st.write("pickles, nice to see you using the beautiful game")
+    st.balloons()
 elif enter_player_2 in jose_names:
     st.write("maddest of dogs, hello.")
 elif enter_player_2 in smith_names:
