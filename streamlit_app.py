@@ -194,7 +194,6 @@ elif enter_player_4 in jose_names:
 elif enter_player_4 in smith_names:
     st.write("STINKY")
 else: st.write(enter_player_4)
-create_player_list.append(enter_player_4)
 
 if len(enter_player_4) != 0:
     create_player_list.append(enter_player_4)
@@ -211,7 +210,6 @@ elif enter_player_5 in jose_names:
 elif enter_player_5 in smith_names:
     st.write("STINKY")
 else: st.write(enter_player_5)
-create_player_list.append(enter_player_5)
 
 if len(enter_player_5) != 0:
     create_player_list.append(enter_player_5)
