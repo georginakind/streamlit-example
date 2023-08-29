@@ -7,9 +7,6 @@ import requests
 import streamlit as st
 import random
 from time import sleep
-import SessionState
-
-ss = SessionState.get(wt=wt)
 
 """
 # meow 
