@@ -178,7 +178,8 @@ elif enter_player_3 in smith_names:
    st.write("STINKY")
 else: st.write(enter_player_3)
 create_player_list.extend(enter_player_3)
-if enter_player_3 is null: create_player_list.remove(enter_player_3)
+if enter_player_3 is None: 
+create_player_list.remove(enter_player_3)
     
 
 
