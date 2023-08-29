@@ -8,7 +8,6 @@ import streamlit as st
 import random
 from time import sleep
 
-#st.balloons()
 
 """
 # meow 
@@ -176,7 +175,8 @@ if enter_player_3 in accepted_pretty_names:
 elif enter_player_3 in pete_names:
    st.write("WOOF who let the dogs out!!") 
 elif enter_player_3 in dani_names:
-   st.write("pickles, nice to see you using the beautiful game")
+    st.write("pickles, nice to see you using the beautiful game")
+    st.balloons()
 elif enter_player_3 in jose_names:
    st.write("maddest of dogs, hello.")
 elif enter_player_3 in smith_names:
@@ -194,6 +194,7 @@ elif enter_player_4 in pete_names:
     st.write("WOOF who let the dogs out!!") 
 elif enter_player_4 in dani_names:
     st.write("pickles, nice to see you using the beautiful game")
+    st.balloons()
 elif enter_player_4 in jose_names:
     st.write("maddest of dogs, hello.")
 elif enter_player_4 in smith_names:
@@ -210,6 +211,7 @@ elif enter_player_5 in pete_names:
     st.write("WOOF who let the dogs out!!") 
 elif enter_player_5 in dani_names:
     st.write("pickles, nice to see you using the beautiful game")
+    st.balloons()
 elif enter_player_5 in jose_names:
     st.write("maddest of dogs, hello.")
 elif enter_player_5 in smith_names:
