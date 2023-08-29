@@ -166,8 +166,6 @@ create_player_list.append(enter_player_2)
 
 #if st.button('add a player'):
 enter_player_3 = st.text_input("enter player 3 name:")
-if enter_player_3 is None: 
-    create_player_list.remove(enter_player_3)
 if enter_player_3 in accepted_pretty_names:
    st.write("omg she's so pretty")
 elif enter_player_3 in pete_names:
@@ -180,7 +178,8 @@ elif enter_player_3 in smith_names:
    st.write("STINKY")
 else: st.write(enter_player_3)
 create_player_list.append(enter_player_3)
-        
+if enter_player_3 is None: 
+    create_player_list.remove(enter_player_3)
 
 
 enter_player_4 = st.text_input("enter player 4 name:")
