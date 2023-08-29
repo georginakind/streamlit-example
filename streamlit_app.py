@@ -213,16 +213,16 @@ elif enter_player_5 in smith_names:
 else: st.write(enter_player_5)
 create_player_list.append(enter_player_5)
 
-st.write("testing new player list process because the current one is ugly"        
-container1 = st.beta_container()
-sym = container1.text_input('Add players')
-container2 = st.beta_container()
-add_button = container2.button('add')
+#st.write("testing new player list process because the current one is ugly"        
+#container1 = st.beta_container()
+#sym = container1.text_input('Add players')
+#container2 = st.beta_container()
+#add_button = container2.button('add')
 
-if add_button:
-    ss.wt.append(sym)
+#if add_button:
+#    ss.wt.append(sym)
 
-st.write(ss.wt)
+#st.write(ss.wt)
 
 st.write(create_player_list)
 
