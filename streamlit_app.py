@@ -178,7 +178,7 @@ elif enter_player_3 in smith_names:
    st.write("STINKY")
 else: st.write(enter_player_3)
 
-if len(enter_player_3) !== 0:
+if len(enter_player_3) != 0:
     create_player_list.append(enter_player_3)
 
 
