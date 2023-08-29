@@ -178,7 +178,7 @@ if st.button('add a player'):
     elif enter_player_3 in smith_names:
         st.write("STINKY")
     else: st.write(enter_player_3)
-    create_player_list.append(enter_player_3)
+    create_player_list.extend(enter_player_3)
     
 
 
