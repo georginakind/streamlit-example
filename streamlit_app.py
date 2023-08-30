@@ -30,7 +30,6 @@ movies_dict_new = {"Who played the iconic character of Neo in The Matrix?": "Kea
 #st.write(movies_dict_new)
 
 movies_questions = list(movies_dict_new.keys())
-#st.write(movies_questions)
 select_movies_question = random.choice(movies_questions)
 st.write(select_movies_question)
 select_movies_answer = movies_dict_new.get(select_movies_question)
@@ -252,7 +251,7 @@ st.write(create_player_list)
 #df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 #st.write(df.head(5))
 
-decision_options = ["movie", "movie", "action", "action", "drink", "meow", "meow", "meow", "never", "song game", "song game"]
+decision_options = ["movie", "action", "action", "drink", "meow", "meow", "meow", "never", "song game", "song game"]
 action_options = ["last person to hit the deck drinks", "last person with their hands up drinks", "girls drink", "boys drink", "they drink (we all about equality in this game)", "least drunk drink", "last person to touch a dog drinks", "last person to touch a wall drinks", "last person to stand up drinks"]
 
 
@@ -286,6 +285,22 @@ if st.button('LETS GO GIRLS'):
     st.subheader("sing a song with this word in it, first to get it gives out a drink")
     sleep(2)
     st.header(song_selection)
+
+  elif decision == "movie":
+    movies_questions = list(movies_dict_new.keys())
+    select_movies_question = random.choice(movies_questions)
+    st.header("Trivia!")
+    st.subheader("the trivia theme is:")
+    st.subheader(decision)
+    st.write("Place your bets!")
+    sleep(3)
+    st.write("You have three more seconds")
+    sleep(3)
+    st.write(select_movies_question)
+    select_movies_answer = movies_dict_new.get(select_movies_question)
+    sleep(4)
+    st.write("i will add a button here to open answer")
+    st.write(select_movies_answer)
     
   else: 
     st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
