@@ -342,7 +342,7 @@ if st.button('LETS GO GIRLS'):
     sleep(5)
     st.write(select_sports_answer)
 
-elif decision == "general knowledge":
+  elif decision == "general knowledge":
     general_questions = list(general_dict_new.keys())
     select_general_question = random.choice(general_questions)
     st.header("Trivia!")
