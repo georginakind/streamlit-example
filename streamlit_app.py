@@ -290,7 +290,7 @@ if st.button('LETS GO GIRLS'):
     movies_questions = list(movies_dict_new.keys())
     select_movies_question = random.choice(movies_questions)
     st.header("Trivia!")
-    st.subheader("the trivia theme is:")
+    st.subheader("Category is:")
     st.subheader(decision)
     st.write("Place your bets!")
     sleep(3)
@@ -298,9 +298,8 @@ if st.button('LETS GO GIRLS'):
     sleep(3)
     st.write(select_movies_question)
     select_movies_answer = movies_dict_new.get(select_movies_question)
-    sleep(4)
-    st.write("i will add a button here to open answer")
-    st.write(select_movies_answer)
+    if st.button('VIEW ANSWER'):
+        st.write(select_movies_answer)
     
   else: 
     st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
