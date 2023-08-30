@@ -325,7 +325,7 @@ if st.button('LETS GO GIRLS'):
     sleep(5)
     st.write(select_taylor_answer)
 
-elif decision == "sports":
+  elif decision == "sports":
     sports_questions = list(sports_dict_new.keys())
     select_sports_question = random.choice(sports_questions)
     st.header("Trivia!")
