@@ -30,8 +30,9 @@ movies_dict_new = {"Who played the iconic character of Neo in The Matrix?": "Kea
 #st.write(movies_dict_new)
 
 movies_questions = list(movies_dict_new.keys())
-st.write(movies_questions)
-
+#st.write(movies_questions)
+select_movies_question = random.choice(movies_questions)
+st.write(select_movies_question)
 
 
 #movies_dict = {'Who played the iconic character of Neo in The Matrix?': 'Keanu Reeves', 'In which film did Humphrey Bogart say the famous line, Here\'s looking at you, kid?': 'Casablanca', 'Which movie features a great white shark terrorizing the small town of Amity Island?': 'Jaws', 'What animated film tells the story of a young lion named Simba?': 'The Lion King', 'Who directed the science fiction classic 2001: A Space Odyssey?': 'Stanley Kubrick', 'In The Lord of the Rings trilogy, what is the name of the fictional world where the story takes place?': 'Middle-earth', 'Which actress won an Academy Award for her role as Margaret Thatcher in The Iron Lady?': 'Meryl Streep', "What 1994 film brought Jim Carrey to stardom with his role as a man who can't lie for 24 hours?": 'The Mask', 'Who played the role of Jack Dawson in the film Titanic?': 'Leonardo DiCaprio', 'What is the highest-grossing animated film of all time, as of my last knowledge update in September 2021?': 'Frozen II', 'In the Harry Potter series, what is the name of Hagrid\s pet dragon?': 'Norbert', 'Which film won the Academy Award for Best Picture in 2020?': 'Parasite', 'Who directed the sci-fi thriller Inception starring Leonardo DiCaprio?': 'Christopher Nolan', 'In Star Wars, what is the real name of the character known as Darth Vader?': 'Anakin Skywalker', 'Who played the iconic character of Captain Jack Sparrow in the Pirates of the Caribbean series?': 'Johnny Depp', 'What classic 1980s film features a time-traveling DeLorean car?': 'Back to the Future', 'Which actress won an Academy Award for her role in Black Swan?': 'Natalie Portman', 'What Quentin Tarantino film follows a pair of hitmen, Jules and Vincent, through a series of interconnected stories?': 'Pulp Fiction', 'Who wrote and directed the 1994 film Pulp Fiction?': 'Quentin Tarantino', 'In the Toy Story series, what is the name of Woodys trusty steed?': 'Bullseye'}
