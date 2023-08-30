@@ -360,4 +360,4 @@ elif decision == "general knowledge":
     st.write(select_general_answer)
 
   else: 
-    st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
+  st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
