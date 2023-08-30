@@ -29,7 +29,6 @@ this is your own personal drinking game with meow song generator included!
 movies_dict_new = {"Who played the iconic character of Neo in The Matrix?": "Keanu Reeves", "In which film did Humphrey Bogart say the famous line, Here's looking at you, kid?": "Casablanca", "Which movie features a great white shark terrorizing the small town of Amity Island?": "Jaws", "What animated film tells the story of a young lion named Simba?": "The Lion King", "Who directed the science fiction classic 2001: A Space Odyssey?": "Stanley Kubrick", "In The Lord of the Rings trilogy, what is the name of the fictional world where the story takes place?": "Middle-earth", "Which actress won an Academy Award for her role as Margaret Thatcher in The Iron Lady?": "Meryl Streep", "What 1994 film brought Jim Carrey to stardom with his role as a man who can't lie for 24 hours?": "The Mask", "Who played the role of Jack Dawson in the film Titanic?": "Leonardo DiCaprio", "What is the highest-grossing animated film of all time, as of my last knowledge update in September 2021?": "Frozen II", "In the Harry Potter series, what is the name of Hagrid's pet dragon?": "Norbert", "Which film won the Academy Award for Best Picture in 2020?": "Parasite", "Who directed the sci-fi thriller Inception starring Leonardo DiCaprio?": "Christopher Nolan", "In Star Wars, what is the real name of the character known as Darth Vader?": "Anakin Skywalker", "Who played the iconic character of Captain Jack Sparrow in the Pirates of the Caribbean series?": "Johnny Depp", "What classic 1980s film features a time-traveling DeLorean car?": "Back to the Future", "Which actress won an Academy Award for her role in Black Swan?": "Natalie Portman", "What Quentin Tarantino film follows a pair of hitmen, Jules and Vincent, through a series of interconnected stories?": "Pulp Fiction", "Who wrote and directed the 1994 film Pulp Fiction?": "Quentin Tarantino", "In the Toy Story series, what is the name of Woody's trusty steed?": "Bullseye"}
 #st.write(movies_dict_new)
 taylor_dict_new = {"What year was Taylor Swift born?": 1989, "What is Taylor Swift's middle name?": "Alison", 'Taylor Swift made her debut with which self-titled album?': '"Taylor Swift"', 'Which album features the hit song "Love Story"?': '"Fearless"', 'What song won Taylor Swift her first Grammy Award?': '"White Horse"', "Taylor Swift's transition to pop music was marked by which album?": '"1989"', 'In which music video did Taylor Swift dress up as various personas, including a male character?': '"You Belong with Me"', "What is the name of Taylor Swift's 2020 album that features a more indie-folk sound?": '"folklore"', 'Which song from "folklore" won the Grammy Award for Song of the Year in 2021?': '"cardigan"', 'Taylor Swift released a surprise album in December 2020; what is its name?': '"evermore"', 'Which streaming platform did Taylor Swift initially have a feud with over her music catalog?': "Spotify", "Taylor Swift's documentary film, released on Netflix in 2020, is named after which album?": '"Miss Americana"', 'What is the title of Taylor Swift\'s re-recorded version of her album "Fearless"?': '"Fearless (Taylor\'s Version)"', 'Which song from her re-recorded "Fearless" album became her first song to top the Billboard Hot 100?': '"Love Story (Taylor\'s Version)"', 'Taylor Swift\'s song "Shake It Off" is from which album?': '"1989"', "What is the name of Taylor Swift's loyal fanbase?": "Swifties", 'Taylor Swift\'s 2020 album "folklore" was created in collaboration with which musician and producer?': "Aaron Dessner", 'In which year did Taylor Swift win the Grammy Award for Album of the Year for "Fearless"?': 2010, 'Which song by Taylor Swift became an anthem for individuality and self-acceptance?': '"ME!"'}
-st.write(taylor_dict_new)
 
 #movies_questions = list(movies_dict_new.keys())
 #select_movies_question = random.choice(movies_questions)
@@ -253,7 +252,7 @@ st.write(create_player_list)
 #df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 #st.write(df.head(5))
 
-decision_options = ["movie", "action", "action", "drink", "meow", "meow", "meow", "song game", "song game"]
+decision_options = ["movie", "taylor swift", "action", "action", "drink", "meow", "meow", "meow", "song game", "song game"]
 action_options = ["last person to hit the deck drinks", "last person with their hands up drinks", "girls drink", "boys drink", "they drink (we all about equality in this game)", "least drunk drink", "last person to touch a dog drinks", "last person to touch a wall drinks", "last person to stand up drinks"]
 
 
@@ -305,9 +304,23 @@ if st.button('LETS GO GIRLS'):
     sleep(5)
     st.write(select_movies_answer)
 
-    #this doesnt work
-      #while st.button('VIEW ANSWER'):
-      #st.write(select_movies_answer)
+  elif decision == "taylor swift":
+    taylor_questions = list(taylor_dict_new.keys())
+    select_taylor_question = random.choice(taylor_questions)
+    st.header("Trivia!")
+    st.subheader("Category is:")
+    st.subheader(decision)
+    st.write("Place your bets!")
+    sleep(3)
+    st.write("You have three more seconds")
+    sleep(3)
+    st.write(select_taylor_question)
+    select_taylor_answer = taylor_dict_new.get(select_taylor_question)
+    sleep(30)
+    st.write("five seconds")
+    sleep(5)
+    st.write(select_taylor_answer)
+
     
   else: 
     st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
