@@ -298,8 +298,14 @@ if st.button('LETS GO GIRLS'):
     sleep(3)
     st.write(select_movies_question)
     select_movies_answer = movies_dict_new.get(select_movies_question)
-    while st.button('VIEW ANSWER'):
-        st.write(select_movies_answer)
+    sleep(5)
+    st.write("three seconds")
+    sleep(3)
+    st.write(select_movies_answer)
+
+    #this doesnt work
+      #while st.button('VIEW ANSWER'):
+      #st.write(select_movies_answer)
     
   else: 
     st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
