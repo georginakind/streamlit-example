@@ -298,7 +298,7 @@ if st.button('LETS GO GIRLS'):
     sleep(3)
     st.write(select_movies_question)
     select_movies_answer = movies_dict_new.get(select_movies_question)
-    if st.button('VIEW ANSWER'):
+    while st.button('VIEW ANSWER'):
         st.write(select_movies_answer)
     
   else: 
