@@ -359,5 +359,4 @@ elif decision == "general knowledge":
     sleep(5)
     st.write(select_general_answer)
 
-  else: 
-    st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
+  else: st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
