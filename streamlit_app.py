@@ -360,4 +360,4 @@ if st.button('LETS GO GIRLS'):
     st.write(select_general_answer)
 
 else: 
-  st.write("press the button silly idiots")
+  st.write("press the button silly idiots ")
