@@ -256,7 +256,7 @@ st.write(create_player_list)
 #df = pd.read_csv(io.StringIO(download.decode('utf-8')))
 #st.write(df.head(5))
 
-decision_options = ["sports", "general knowledge", "movie", "taylor swift", "action", "action", "drink", "meow", "meow", "meow", "meow", "song game", "song game", "song game"]
+decision_options = ["never", "never", "never", "never", "never", "never", "never", "never", "sports", "general knowledge", "movie", "taylor swift", "action", "action", "drink", "meow", "meow", "meow", "meow", "song game", "song game", "song game"]
 action_options = ["last person to hit the deck drinks", "last person with their hands up drinks", "girls drink", "boys drink", "they drink (we all about equality in this game)", "least drunk drink", "last person to touch a dog drinks", "last person to touch a wall drinks", "last person to stand up drinks"]
 
 
@@ -360,4 +360,4 @@ if st.button('LETS GO GIRLS'):
     st.write(select_general_answer)
 
 else: 
-  st.write("you did something wrong G SORRY EVERYONE IM JUST A BA IM LEARNING ")
+  st.write("press the button silly idiots")
