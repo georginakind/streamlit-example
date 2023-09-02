@@ -238,6 +238,36 @@ else: st.write(enter_player_5)
 if len(enter_player_5) != 0:
     create_player_list.append(enter_player_5)
 
+enter_player_6 = st.text_input("enter player 6 name:")
+if enter_player_6 in accepted_pretty_names:
+    st.write("omg she's so pretty")
+elif enter_player_6 in pete_names:
+    st.write("WOOF who let the dogs out!!") 
+elif enter_player_6 in dani_names:
+    st.write("pickles, nice to see you using the beautiful game")
+   # st.balloons()
+elif enter_player_6 in jose_names:
+    st.write("maddest of dogs, hello.")
+elif enter_player_6 in smith_names:
+    st.write("STINKY")
+else: st.write(enter_player_6)
+create_player_list.append(enter_player_6)
+
+enter_player_7 = st.text_input("enter player 7 name:")
+if enter_player_7 in accepted_pretty_names:
+    st.write("omg she's so pretty")
+elif enter_player_7 in pete_names:
+    st.write("WOOF who let the dogs out!!") 
+elif enter_player_7 in dani_names:
+    st.write("pickles, nice to see you using the beautiful game")
+   # st.balloons()
+elif enter_player_7 in jose_names:
+    st.write("maddest of dogs, hello.")
+elif enter_player_7 in smith_names:
+    st.write("STINKY")
+else: st.write(enter_player_7)
+create_player_list.append(enter_player_7)
+
 #st.write("testing new player list process because the current one is ugly"        
 #container1 = st.beta_container()
 #sym = container1.text_input('Add players')
