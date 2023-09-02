@@ -252,6 +252,9 @@ elif enter_player_6 in smith_names:
     st.write("STINKY")
 else: st.write(enter_player_6)
 create_player_list.append(enter_player_6)
+if len(enter_player_6) != 0:
+    create_player_list.append(enter_player_6)
+
 
 enter_player_7 = st.text_input("enter player 7 name:")
 if enter_player_7 in accepted_pretty_names:
@@ -267,6 +270,8 @@ elif enter_player_7 in smith_names:
     st.write("STINKY")
 else: st.write(enter_player_7)
 create_player_list.append(enter_player_7)
+if len(enter_player_7) != 0:
+    create_player_list.append(enter_player_7)
 
 #st.write("testing new player list process because the current one is ugly"        
 #container1 = st.beta_container()
