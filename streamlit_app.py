@@ -888,18 +888,17 @@ if st.button("LETS GO GIRLS"):
         movies_questions = list(movies_dict_new.keys())
         select_movies_question = random.choice(movies_questions)
         st.header("Trivia!")
-        st.subheader("Category is:")
-        st.subheader(decision)
+        st.subheader(f"Category is: {decision}")
         st.write("Place your bets!")
-        sleep(3)
-        st.write("You have three more seconds")
-        sleep(3)
+        bet = dict()
+        for i in create_player_list:
+            bet[i] = st.text_input(f"{i}bet sips between 1 and 4")
         st.write(select_movies_question)
         select_movies_answer = movies_dict_new.get(select_movies_question)
-        sleep(30)
-        st.write("You have five more seconds")
-        sleep(5)
+        st.button("Reveal answer")
         st.write(select_movies_answer)
+
+
 
     elif decision == "taylor swift":
         taylor_questions = list(taylor_dict_new.keys())
