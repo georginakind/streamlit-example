@@ -675,6 +675,7 @@ jose_names = {"Jose", "jose", "mad dog jose dog"}
 smith_names = {"smith", "smithy", "Smithy", "Smith", "Daniel"}
 jem_names = {"jem", "Jem", "Jemima", "jemima"}
 
+a = st.toggle("is danni here?")
 enter_player_1 = st.text_input("enter player 1 name:")
 if enter_player_1 in accepted_pretty_names:
     st.write("omg she's so pretty")
@@ -895,13 +896,12 @@ if st.button("LETS GO GIRLS"):
             bet[i] = st.text_input(f"{i}bet sips between 1 and 4")
         st.write(select_movies_question)
         select_movies_answer = movies_dict_new.get(select_movies_question)
-        st.button("Reveal answer")
-        st.write(select_movies_answer)
+        if st.button("Reveal answer", key="movie"):
+            st.write(select_movies_answer)
 
 
 
     elif decision == "taylor swift":
-        a = st.button("is danni here?")
         if a:
             taylor_questions = list(taylor_dict_new.keys())
             select_taylor_question = random.choice(taylor_questions)
@@ -914,8 +914,8 @@ if st.button("LETS GO GIRLS"):
                 bet[i] = st.text_input(f"{i}bet sips between 1 and 4")
             st.write(select_taylor_question)
             select_taylor_answer = taylor_dict_new.get(select_taylor_question)
-            st.button("Reveal answer")
-            st.write(select_taylor_answer)
+            if st.button("Reveal answer", key="taylor"):
+                st.write(select_taylor_answer)
         else:
             st.write("no taylor for you")
 
@@ -930,8 +930,8 @@ if st.button("LETS GO GIRLS"):
             bet[i] = st.text_input(f"{i}bet sips between 1 and 4")
         st.write(select_sports_question)
         select_sports_answer = sports_dict_new.get(select_sports_question)
-        st.button("Reveal answer")
-        st.write(select_sports_answer)
+        if st.button("Reveal answer", key="sports"):
+            st.write(select_sports_answer)
 
     elif decision == "general knowledge":
         general_questions = list(general_dict_new.keys())
@@ -944,8 +944,8 @@ if st.button("LETS GO GIRLS"):
             bet[i] = st.text_input(f"{i}bet sips between 1 and 4")
         st.write(select_general_question)
         select_general_answer = general_dict_new.get(select_general_question)
-        st.button("Reveal answer")
-        st.write(select_general_answer)
+        if st.button("Reveal answer", key="general"):
+            st.write(select_general_answer)
 
 else:
     st.write("press the button silly idiots ")
